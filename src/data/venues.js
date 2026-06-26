@@ -30,7 +30,7 @@ export const venues = [
     name: 'Club Elmwood Park',
     city: 'Elmwood Park',
     logo: '/images/logos/club-elmwood.png',
-    hero: '/images/hero/club-elmwood-hero.png',
+    hero: '/images/hero/club-elmwood-hero.jpeg',
     tagline: 'Classic banquet hall atmosphere with a refined finish.',
     capacity: 'Flexible capacity',
     style: 'Classic Banquet Hall',
