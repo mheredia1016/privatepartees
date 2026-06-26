@@ -10,6 +10,28 @@ export const venues = [
     style: 'Modern Ballroom',
     address: 'Franklin Park, Illinois',
     gallery: ['/images/venues/cielo/cielo01.png', '/images/venues/cielo/cielo02.png', '/images/venues/cielo/cielo03.png'],
+    flyers: [
+      {
+        title: 'Wedding Packages',
+        image: '/images/flyers/cielo/packages.jpg',
+        pdf: '/pdf/cielo/packages.pdf'
+      },
+      {
+        title: 'Floor Plan',
+        image: '/images/flyers/cielo/floorplan.jpg',
+        pdf: '/pdf/cielo/floorplan.pdf'
+      },
+      {
+        title: 'Bar Packages',
+        image: '/images/flyers/cielo/bar.jpg',
+        pdf: '/pdf/cielo/bar.pdf'
+      },
+      {
+        title: 'Preferred Vendors',
+        image: '/images/flyers/cielo/vendors.jpg',
+        pdf: '/pdf/cielo/vendors.pdf'
+      }
+    ],
     features: ['Grand ballroom', 'Dance floor', 'Custom lighting', 'Private event service', 'Photo-ready interiors', 'Convenient parking']
   },
   {
