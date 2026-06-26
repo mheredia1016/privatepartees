@@ -9,7 +9,7 @@ export const venues = [
     capacity: 'Up to 300 guests',
     style: 'Modern Ballroom',
     address: 'Franklin Park, Illinois',
-    gallery: ['/images/venues/cielo/cielo01.png', '/images/venues/cielo02.png', '/images/venues/cielo03.png'],
+    gallery: ['/images/venues/cielo/cielo01.png', '/images/venues/cielo/cielo02.png', '/images/venues/cielo/cielo03.png'],
     features: ['Grand ballroom', 'Dance floor', 'Custom lighting', 'Private event service', 'Photo-ready interiors', 'Convenient parking']
   },
   {
