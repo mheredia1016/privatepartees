@@ -53,6 +53,41 @@ const { venue } = Astro.props;
     <div><h3>Tour The Space</h3><p>Invite visitors to request a tour, check availability, or speak with the venue team.</p></div>
   </section>
 
+
+<section class="venue-flyers reveal">
+  <div class="container">
+
+    <div class="section-heading">
+      <span>Resources</span>
+      <h2>Venue Information</h2>
+    </div>
+
+    <div class="flyer-grid">
+
+      {venue.flyers.map((flyer) => (
+        <a
+          href={flyer.link}
+          target="_blank"
+          class="flyer-card"
+        >
+          <img
+            src={flyer.image}
+            alt={flyer.title}
+          />
+
+          <div class="flyer-info">
+            <h3>{flyer.title}</h3>
+            <span>View PDF →</span>
+          </div>
+
+        </a>
+      ))}
+
+    </div>
+
+  </div>
+</section>
+
   <section class="other-venues section">
     <div class="section-heading reveal"><span>More Venues</span><h2>Explore Our Other Spaces</h2></div>
     <div class="mini-venue-grid">
