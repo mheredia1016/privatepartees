@@ -1,0 +1,19 @@
+---
+const nav = [
+  ['/', 'Home'],
+  ['/venues/cielo/', 'Venues'],
+  ['/gallery/', 'Gallery'],
+  ['/about/', 'About'],
+  ['/contact/', 'Contact']
+];
+---
+<header class="site-header" data-header>
+  <a class="brand" href="/" aria-label="PrivatePartees Home">
+    <img src="/images/logos/privatepartees.png" alt="PrivatePartees.com" />
+  </a>
+  <button class="menu-toggle" data-menu-toggle aria-label="Open menu">Menu</button>
+  <nav class="main-nav" data-menu>
+    {nav.map(([href, label]) => <a href={href}>{label}</a>)}
+    <a class="nav-cta" href="/contact/">Inquire</a>
+  </nav>
+</header>

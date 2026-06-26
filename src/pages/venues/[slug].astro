@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CTA from '../../components/CTA.astro';
+import { venues } from '../../data/venues.js';
+
+export function getStaticPaths() {
+  return venues.map((venue) => ({ params: { slug: venue.slug }, props: { venue } }));
+}
+const { venue } = Astro.props;
+---
+<BaseLayout title={`${venue.name} | PrivatePartees.com`} description={`${venue.name} private events in ${venue.city}, Illinois.`}>
+  <Header />
+  <section class="venue-hero">
+    <img src={venue.hero} alt={`${venue.name} venue`} />
+    <div class="hero-shade"></div>
+    <div class="venue-hero-content reveal">
+      <img src={venue.logo} alt={venue.name} />
+      <p>{venue.address}</p>
+      <h1>{venue.tagline}</h1>
+      <a class="gold-button" href="/contact/">Request Information</a>
+    </div>
+  </section>
+
+  <section class="facts-bar reveal">
+    <div><span>Location</span><strong>{venue.city}</strong></div>
+    <div><span>Capacity</span><strong>{venue.capacity}</strong></div>
+    <div><span>Style</span><strong>{venue.style}</strong></div>
+    <div><span>Events</span><strong>Private Celebrations</strong></div>
+  </section>
+
+  <section class="section split-section venue-intro">
+    <div class="split-copy reveal">
+      <span class="kicker">The Experience</span>
+      <h2>{venue.name}</h2>
+      <p>{venue.name} offers a polished private event setting in {venue.city}, Illinois. Use this area for real venue copy: room details, atmosphere, service notes, capacity, parking, catering, and any selling points.</p>
+      <div class="feature-list">{venue.features.map((feature) => <span>{feature}</span>)}</div>
+    </div>
+    <div class="split-image reveal"><img src={venue.hero} alt={venue.name} /></div>
+  </section>
+
+  <section class="section gallery-preview">
+    <div class="section-heading reveal"><span>Photos</span><h2>Explore {venue.name}</h2></div>
+    <div class="masonry-grid reveal">
+      {venue.gallery.map((image) => <a href={image}><img src={image} alt={`${venue.name} gallery`} /></a>)}
+    </div>
+  </section>
+
+  <section class="section venue-details reveal">
+    <div><h3>Perfect For</h3><p>Weddings, birthdays, quinceañeras, anniversaries, corporate events, showers, holiday parties, and private celebrations.</p></div>
+    <div><h3>Amenities</h3><p>Replace this with real details: parking, bar service, catering, dance floor, AV, bridal suite, vendor access, and floor plan information.</p></div>
+    <div><h3>Tour The Space</h3><p>Invite visitors to request a tour, check availability, or speak with the venue team.</p></div>
+  </section>
+
+  <section class="other-venues section">
+    <div class="section-heading reveal"><span>More Venues</span><h2>Explore Our Other Spaces</h2></div>
+    <div class="mini-venue-grid">
+      {venues.filter((item) => item.slug !== venue.slug).map((item) => (
+        <a href={`/venues/${item.slug}/`} class="mini-card reveal"><img src={item.hero} alt={item.name} /><div><img src={item.logo} alt={item.name} /><span>{item.city}, Illinois</span></div></a>
+      ))}
+    </div>
+  </section>
+  <CTA />
+  <Footer />
+</BaseLayout>

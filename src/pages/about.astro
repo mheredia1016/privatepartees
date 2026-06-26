@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CTA from '../components/CTA.astro';
+---
+<BaseLayout title="About | PrivatePartees.com">
+  <Header />
+  <section class="subpage-hero small-hero">
+    <img src="/images/hero/home-hero.png" alt="Private event venue" />
+    <div class="hero-shade"></div>
+    <div class="subpage-copy reveal"><span>About</span><h1>Private Event Spaces Built for Celebration</h1></div>
+  </section>
+  <section class="section narrow-copy reveal">
+    <p>PrivatePartees.com showcases three private event venues serving Chicago and the surrounding suburbs. Each venue has its own personality, city, and atmosphere while sharing the same goal: creating a polished setting for unforgettable events.</p>
+    <p>Use this page to add the company story, years in business, family background, service standards, or anything that helps customers trust the brand before they inquire.</p>
+  </section>
+  <CTA />
+  <Footer />
+</BaseLayout>

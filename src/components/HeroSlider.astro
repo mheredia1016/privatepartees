@@ -1,0 +1,42 @@
+---
+import { venues } from '../data/venues.js';
+const slides = [
+  {
+    logo: '/images/logos/privatepartees.png',
+    image: '/images/hero/home-hero.png',
+    eyebrow: 'Private Event Venues',
+    line: 'Three unforgettable spaces for life’s biggest celebrations.',
+    href: '#venues',
+    button: 'Explore Venues'
+  },
+  ...venues.map((venue) => ({
+    logo: venue.logo,
+    image: venue.hero,
+    eyebrow: venue.city + ', Illinois',
+    line: venue.tagline,
+    href: `/venues/${venue.slug}/`,
+    button: 'View Venue'
+  }))
+];
+---
+<section class="hero-slider" data-slider>
+  {slides.map((slide, i) => (
+    <article class:list={["hero-slide", { active: i === 0 }]} data-slide>
+      <img class="hero-bg" src={slide.image} alt="" />
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <img class="hero-logo" src={slide.logo} alt="" />
+        <p class="hero-eyebrow">{slide.eyebrow}</p>
+        <p class="hero-line">{slide.line}</p>
+        <a class="gold-button" href={slide.href}>{slide.button}</a>
+      </div>
+    </article>
+  ))}
+  <div class="slider-controls">
+    <button data-prev aria-label="Previous slide">‹</button>
+    <div class="slider-dots">
+      {slides.map((_, i) => <button class:list={[{ active: i === 0 }]} data-dot={i} aria-label={`Go to slide ${i + 1}`}></button>)}
+    </div>
+    <button data-next aria-label="Next slide">›</button>
+  </div>
+</section>

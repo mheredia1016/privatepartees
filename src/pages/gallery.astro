@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+const images = ['/images/hero/cielo-hero.png','/images/hero/avenue-hero.png','/images/hero/club-elmwood-hero.png','/images/hero/home-hero.png'];
+---
+<BaseLayout title="Gallery | PrivatePartees.com">
+  <Header />
+  <section class="subpage-hero small-hero">
+    <img src="/images/hero/avenue-hero.png" alt="Gallery" />
+    <div class="hero-shade"></div>
+    <div class="subpage-copy reveal"><span>Gallery</span><h1>Venue Photos</h1></div>
+  </section>
+  <section class="section gallery-page">
+    <div class="masonry-grid large reveal">
+      {images.map((image) => <a href={image}><img src={image} alt="Private venue gallery" /></a>)}
+    </div>
+  </section>
+  <Footer />
+</BaseLayout>

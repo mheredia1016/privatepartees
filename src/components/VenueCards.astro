@@ -1,0 +1,23 @@
+---
+import { venues } from '../data/venues.js';
+---
+<section class="section venue-section" id="venues">
+  <div class="section-heading reveal">
+    <span>Choose Your Setting</span>
+    <h2>Our Venues</h2>
+    <p>Explore three distinct private event spaces serving Chicago and the surrounding suburbs.</p>
+  </div>
+  <div class="venue-grid">
+    {venues.map((venue) => (
+      <a class="venue-card reveal" href={`/venues/${venue.slug}/`}>
+        <img src={venue.hero} alt={`${venue.name} venue`} />
+        <div class="venue-card-overlay"></div>
+        <div class="venue-card-content">
+          <img src={venue.logo} alt={venue.name} />
+          <p>{venue.city}, Illinois</p>
+          <span>View Venue</span>
+        </div>
+      </a>
+    ))}
+  </div>
+</section>
