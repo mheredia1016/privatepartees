@@ -45,6 +45,28 @@ export const venues = [
     style: 'Contemporary Event Space',
     address: 'Chicago, Illinois',
     gallery: ['/images/venues/avenue/01.png', '/images/hero/avenue-hero.png'],
+    flyers: [
+      {
+        title: 'Wedding Packages',
+        image: '/images/flyers/cielo/packages.jpg',
+        pdf: '/pdf/cielo/packages.pdf'
+      },
+      {
+        title: 'Floor Plan',
+        image: '/images/flyers/cielo/floorplan.jpg',
+        pdf: '/pdf/cielo/floorplan.pdf'
+      },
+      {
+        title: 'Bar Packages',
+        image: '/images/flyers/cielo/bar.jpg',
+        pdf: '/pdf/cielo/bar.pdf'
+      },
+      {
+        title: 'Preferred Vendors',
+        image: '/images/flyers/cielo/vendors.jpg',
+        pdf: '/pdf/cielo/vendors.pdf'
+      }
+    ],
     features: ['Chicago location', 'Modern event layout', 'Bar service', 'Celebration-ready design', 'Flexible setup', 'Great photo moments']
   },
   {
@@ -58,6 +80,28 @@ export const venues = [
     style: 'Classic Banquet Hall',
     address: 'Elmwood Park, Illinois',
     gallery: ['/images/venues/club-elmwood/01.png', '/images/hero/club-elmwood-hero.png'],
+    flyers: [
+      {
+        title: 'Wedding Packages',
+        image: '/images/flyers/cielo/packages.jpg',
+        pdf: '/pdf/cielo/packages.pdf'
+      },
+      {
+        title: 'Floor Plan',
+        image: '/images/flyers/cielo/floorplan.jpg',
+        pdf: '/pdf/cielo/floorplan.pdf'
+      },
+      {
+        title: 'Bar Packages',
+        image: '/images/flyers/cielo/bar.jpg',
+        pdf: '/pdf/cielo/bar.pdf'
+      },
+      {
+        title: 'Preferred Vendors',
+        image: '/images/flyers/cielo/vendors.jpg',
+        pdf: '/pdf/cielo/vendors.pdf'
+      }
+    ],
     features: ['Classic ballroom', 'Full event setup', 'Dance floor', 'Private celebrations', 'Banquet service', 'Elmwood Park location']
   }
 ];
