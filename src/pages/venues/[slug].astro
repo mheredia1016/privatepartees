@@ -37,7 +37,13 @@ const { venue } = Astro.props;
       <p>{venue.name} offers a polished private event setting in {venue.city}, Illinois. Use this area for real venue copy: room details, atmosphere, service notes, capacity, parking, catering, and any selling points.</p>
       <div class="feature-list">{venue.features.map((feature) => <span>{feature}</span>)}</div>
     </div>
-    <div class="split-image reveal"><img src={venue.hero} alt={venue.name} /></div>
+    <div class="split-image reveal">
+  <div class="venue-slider" data-venue-slider>
+    {(venue.heroSlides || [venue.hero]).map((image) => (
+      <img src={image} alt={venue.name} />
+    ))}
+  </div>
+</div>
   </section>
 
   <section class="section gallery-preview">
