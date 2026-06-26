@@ -5,6 +5,11 @@ export const venues = [
     city: 'Franklin Park',
     logo: '/images/logos/cielo.png',
     hero: '/images/hero/cielo-hero.png',
+    heroSlides: [
+  '/images/venues/cielo/hero01.png',
+  '/images/venues/cielo/hero02.png',
+  '/images/venues/cielo/hero03.png'
+],
     tagline: 'Elegant spaces for unforgettable celebrations.',
     capacity: 'Up to 300 guests',
     style: 'Modern Ballroom',
@@ -40,6 +45,11 @@ export const venues = [
     city: 'Chicago',
     logo: '/images/logos/avenue.png',
     hero: '/images/hero/avenue-hero.png',
+    heroSlides: [
+  '/images/venues/cielo/hero01.png',
+  '/images/venues/cielo/hero02.png',
+  '/images/venues/cielo/hero03.png'
+],
     tagline: 'A polished Chicago setting for private events.',
     capacity: 'Flexible capacity',
     style: 'Contemporary Event Space',
@@ -75,6 +85,11 @@ export const venues = [
     city: 'Elmwood Park',
     logo: '/images/logos/club-elmwood.png',
     hero: '/images/hero/club-elmwood-hero.jpeg',
+    heroSlides: [
+  '/images/venues/cielo/hero01.png',
+  '/images/venues/cielo/hero02.png',
+  '/images/venues/cielo/hero03.png'
+],
     tagline: 'Classic banquet hall atmosphere with a refined finish.',
     capacity: 'Flexible capacity',
     style: 'Classic Banquet Hall',
