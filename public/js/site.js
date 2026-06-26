@@ -45,3 +45,18 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: .14 });
 
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+document.querySelectorAll('[data-venue-slider]').forEach((slider) => {
+  const slides = slider.querySelectorAll('img');
+  let index = 0;
+
+  if (slides.length <= 1) return;
+
+  slides[0].classList.add('active');
+
+  setInterval(() => {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+  }, 4000);
+});
