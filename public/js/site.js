@@ -60,3 +60,42 @@ document.querySelectorAll('[data-venue-slider]').forEach((slider) => {
     slides[index].classList.add('active');
   }, 4000);
 });
+
+const flyerModal = document.createElement('div');
+flyerModal.className = 'flyer-modal';
+flyerModal.innerHTML = `
+  <button class="flyer-modal-close" type="button" aria-label="Close flyer">×</button>
+  <img src="" alt="Venue flyer">
+`;
+document.body.appendChild(flyerModal);
+
+const flyerModalImg = flyerModal.querySelector('img');
+const flyerModalClose = flyerModal.querySelector('.flyer-modal-close');
+
+document.querySelectorAll('[data-flyer-modal]').forEach((button) => {
+  button.addEventListener('click', () => {
+    flyerModalImg.src = button.dataset.flyerModal;
+    flyerModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+function closeFlyerModal() {
+  flyerModal.classList.remove('open');
+  flyerModalImg.src = '';
+  document.body.style.overflow = '';
+}
+
+flyerModalClose.addEventListener('click', closeFlyerModal);
+
+flyerModal.addEventListener('click', (event) => {
+  if (event.target === flyerModal) {
+    closeFlyerModal();
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && flyerModal.classList.contains('open')) {
+    closeFlyerModal();
+  }
+});
