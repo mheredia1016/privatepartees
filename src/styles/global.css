@@ -880,3 +880,46 @@ font-size:36px
 @media (max-width:600px){
   .flyer-grid{grid-template-columns:1fr;}
 }
+
+.flyer-card {
+  cursor: pointer;
+  padding: 0;
+  border: 1px solid var(--line);
+  background: #111;
+}
+
+.flyer-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.flyer-modal.open {
+  display: flex;
+}
+
+.flyer-modal img {
+  max-width: min(1000px, 94vw);
+  max-height: 90vh;
+  object-fit: contain;
+  box-shadow: 0 25px 80px rgba(0,0,0,.7);
+}
+
+.flyer-modal-close {
+  position: fixed;
+  top: 24px;
+  right: 28px;
+  z-index: 10000;
+  background: none;
+  border: 1px solid var(--line);
+  color: #fff;
+  font-size: 34px;
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+}
