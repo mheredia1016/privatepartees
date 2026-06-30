@@ -6,8 +6,6 @@ export const venues = [
     logo: '/images/logos/cielo.png',
     hero: '/images/hero/cielo-hero.png',
     heroSlides: [
-  '/images/venues/cielo/hero01.png',
-  '/images/venues/cielo/hero02.png',
   '/images/venues/cielo/hero03.png'
 ],
     tagline: 'Elegant spaces for unforgettable celebrations.',
