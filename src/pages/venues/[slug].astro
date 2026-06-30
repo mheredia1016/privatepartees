@@ -68,13 +68,13 @@ const { venue } = Astro.props;
 
   <div class="flyer-grid">
     {(venue.flyers || []).map((flyer) => (
-      <div class="flyer-card">
+      <button class="flyer-card" type="button" data-flyer-modal={flyer.image}>
         <img
           src={flyer.image}
           alt={`${venue.name} Information`}
           loading="lazy"
         />
-      </div>
+      </button>
     ))}
   </div>
 </section>
