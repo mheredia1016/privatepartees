@@ -11,8 +11,8 @@ export const venues = [
     tagline: 'Elegant spaces for unforgettable celebrations.',
     capacity: 'Up to 300 guests',
     style: 'Modern Ballroom',
-  address: '9717 Franklin Ave, Franklin Park, IL 60131',
-  map: 'https://www.google.com/maps?q=9717+Franklin+Ave+Franklin+Park+IL+60131&output=embed',
+  address: '10211 W Grand Ave, Franklin Park, IL 60131',
+  map: 'https://www.google.com/maps?q=10211+W+Grand+Ave+Franklin+Park+IL+60131&output=embed',
     gallery: ['/images/venues/cielo/cielo01.png', '/images/venues/cielo/cielo02.png', '/images/venues/cielo/cielo03.png'],
     flyers: [
       {
