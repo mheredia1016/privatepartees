@@ -10,22 +10,36 @@ import Footer from '../components/Footer.astro';
     <div class="hero-shade"></div>
     <div class="subpage-copy reveal"><span>Contact</span><h1>Request Information</h1></div>
   </section>
-  <section class="section contact-grid">
-    <div class="contact-copy reveal">
-      <span class="kicker">Start Planning</span>
-      <h2>Tell us about your event.</h2>
-      <p>Use this form to collect leads through Netlify Forms. Replace the email/phone once the company details are finalized.</p>
-      <p><strong>Email:</strong> info@privatepartees.com<br /><strong>Phone:</strong> (000) 000-0000</p>
+  <section class="section contact-simple">
+
+  <div class="section-heading">
+    <span>Contact</span>
+    <h1>Let's Plan Your Event</h1>
+  </div>
+
+  <div class="contact-card">
+
+    <p>
+      Have questions about pricing, availability, or scheduling a tour?
+      Call or text us anytime.
+    </p>
+
+    <h2>
+      <a href="tel:3126710777">(312) 671-0777</a>
+    </h2>
+
+    <div class="contact-buttons">
+      <a href="tel:3126710777" class="gold-button">
+        Call Now
+      </a>
+
+      <a href="sms:3126710777" class="gold-button">
+        Send a Text
+      </a>
     </div>
-    <form class="contact-form reveal" name="inquiry" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="inquiry" />
-      <label>Name<input name="name" required /></label>
-      <label>Email<input type="email" name="email" required /></label>
-      <label>Phone<input name="phone" /></label>
-      <label>Venue<select name="venue"><option>Cielo</option><option>The Avenue</option><option>Club Elmwood Park</option><option>Not Sure Yet</option></select></label>
-      <label>Message<textarea name="message" rows="6"></textarea></label>
-      <button class="gold-button" type="submit">Send Inquiry</button>
-    </form>
-  </section>
+
+  </div>
+
+</section>
   <Footer />
 </BaseLayout>
