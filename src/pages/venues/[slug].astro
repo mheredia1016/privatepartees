@@ -79,6 +79,44 @@ const { venue } = Astro.props;
   </div>
 </section>
 
+
+<section class="section venue-map reveal">
+
+  <div class="section-heading">
+    <span>Location</span>
+    <h2>Visit {venue.name}</h2>
+  </div>
+
+  <div class="map-grid">
+
+    <iframe
+      src={venue.map}
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <div class="map-info">
+
+      <h3>{venue.name}</h3>
+
+      <p>{venue.address}</p>
+
+      <a
+        href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(venue.address)}`}
+        class="gold-button"
+        target="_blank"
+      >
+        Get Directions
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
   <section class="other-venues section">
     <div class="section-heading reveal"><span>More Venues</span><h2>Explore Our Other Spaces</h2></div>
     <div class="mini-venue-grid">
