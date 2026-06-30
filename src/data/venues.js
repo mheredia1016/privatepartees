@@ -11,7 +11,8 @@ export const venues = [
     tagline: 'Elegant spaces for unforgettable celebrations.',
     capacity: 'Up to 300 guests',
     style: 'Modern Ballroom',
-    address: 'Franklin Park, Illinois',
+  address: '9717 Franklin Ave, Franklin Park, IL 60131',
+  map: 'https://www.google.com/maps?q=9717+Franklin+Ave+Franklin+Park+IL+60131&output=embed',
     gallery: ['/images/venues/cielo/cielo01.png', '/images/venues/cielo/cielo02.png', '/images/venues/cielo/cielo03.png'],
     flyers: [
       {
@@ -49,7 +50,8 @@ export const venues = [
     tagline: 'A polished Chicago setting for private events.',
     capacity: 'Flexible capacity',
     style: 'Contemporary Event Space',
-    address: 'Chicago, Illinois',
+    address: '2366 N Neva Ave, Chicago, IL 60707',
+map: 'https://www.google.com/maps?q=2366+N+Neva+Ave+Chicago+IL+60707&output=embed',
     gallery: ['/images/venues/avenue/01.png', '/images/hero/avenue-hero.png'],
     flyers: [
       {
@@ -83,7 +85,8 @@ export const venues = [
     tagline: 'Classic banquet hall atmosphere with a refined finish.',
     capacity: 'Flexible capacity',
     style: 'Classic Banquet Hall',
-    address: 'Elmwood Park, Illinois',
+    address: '3140 N 77th Ave, Elmwood Park, IL 60707',
+map: 'https://www.google.com/maps?q=3140+N+77th+Ave+Elmwood+Park+IL+60707&output=embed',
     gallery: ['/images/venues/club-elmwood/01.png', '/images/hero/club-elmwood-hero.png'],
     flyers: [
       {
