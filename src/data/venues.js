@@ -53,24 +53,20 @@ export const venues = [
     gallery: ['/images/venues/avenue/01.png', '/images/hero/avenue-hero.png'],
     flyers: [
       {
-        title: 'Wedding Packages',
-        image: '/images/flyers/cielo/packages.jpg',
-        pdf: '/pdf/cielo/packages.pdf'
+        title: '',
+        image: '/images/flyers/avenue/avenue1.png',
       },
       {
-        title: 'Floor Plan',
-        image: '/images/flyers/cielo/floorplan.jpg',
-        pdf: '/pdf/cielo/floorplan.pdf'
+        title: '',
+        image: '/images/flyers/avenue/avenue2.png',
       },
       {
-        title: 'Bar Packages',
-        image: '/images/flyers/cielo/bar.jpg',
-        pdf: '/pdf/cielo/bar.pdf'
+        title: '',
+        image: '/images/flyers/avenue/avenue3.png',
       },
       {
-        title: 'Preferred Vendors',
-        image: '/images/flyers/cielo/vendors.jpg',
-        pdf: '/pdf/cielo/vendors.pdf'
+        title: '',
+        image: '/images/flyers/avenue/avenue4.png',
       }
     ],
     features: ['Chicago location', 'Modern event layout', 'Bar service', 'Celebration-ready design', 'Flexible setup', 'Great photo moments']
