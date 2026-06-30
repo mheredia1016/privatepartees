@@ -60,37 +60,22 @@ const { venue } = Astro.props;
   </section>
 
 
-<section class="venue-flyers reveal">
-  <div class="container">
+<section class="venue-flyers section reveal">
+  <div class="section-heading">
+    <span>Resources</span>
+    <h2>Venue Information</h2>
+  </div>
 
-    <div class="section-heading">
-      <span>Resources</span>
-      <h2>Venue Information</h2>
-    </div>
-
-    <div class="flyer-grid">
-
-      {venue.flyers.map((flyer) => (
-        <a
-          href={flyer.link}
-          target="_blank"
-          class="flyer-card"
-        >
-          <img
-            src={flyer.image}
-            alt={flyer.title}
-          />
-
-          <div class="flyer-info">
-            <h3>{flyer.title}</h3>
-            <span>View PDF →</span>
-          </div>
-
-        </a>
-      ))}
-
-    </div>
-
+  <div class="flyer-grid">
+    {(venue.flyers || []).map((flyer) => (
+      <div class="flyer-card">
+        <img
+          src={flyer.image}
+          alt={`${venue.name} Information`}
+          loading="lazy"
+        />
+      </div>
+    ))}
   </div>
 </section>
 
