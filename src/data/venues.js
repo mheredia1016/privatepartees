@@ -44,8 +44,6 @@ export const venues = [
     logo: '/images/logos/avenue.png',
     hero: '/images/hero/avenue-hero.png',
     heroSlides: [
-  '/images/venues/avenue/hero01.png',
-  '/images/venues/avenue/hero02.png',
   '/images/venues/avenue/hero03.png'
 ],
     tagline: 'A polished Chicago setting for private events.',
@@ -84,8 +82,6 @@ export const venues = [
     logo: '/images/logos/club-elmwood.png',
     hero: '/images/hero/club-elmwood-hero.jpeg',
     heroSlides: [
-  '/images/venues/club-elmwood/hero01.png',
-  '/images/venues/club-elmwood/hero02.png',
   '/images/venues/club-elmwood/hero03.png'
 ],
     tagline: 'Classic banquet hall atmosphere with a refined finish.',
