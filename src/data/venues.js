@@ -4,7 +4,7 @@ export const venues = [
     name: 'Cielo',
     city: 'Franklin Park',
     logo: '/images/logos/cielo.png',
-    hero: '/images/hero/cielo-hero.png',
+    hero: '/images/hero/cielo-hero.png', 
     heroSlides: [
   '/images/venues/cielo/hero03.png'
 ],
