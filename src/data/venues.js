@@ -10,33 +10,29 @@ export const venues = [
 ],
     tagline: 'Elegant spaces for unforgettable celebrations.',
     capacity: 'Up to 100 guests',
-    style: 'Modern Ballroom',
+    style: 'Modern',
   address: '10211 W Grand Ave, Franklin Park, IL 60131',
   map: 'https://www.google.com/maps?q=10211+W+Grand+Ave+Franklin+Park+IL+60131&output=embed',
     gallery: ['/images/venues/cielo/cielo01.png', '/images/venues/cielo/cielo02.png', '/images/venues/cielo/cielo03.png'],
     flyers: [
       {
-        title: 'Wedding Packages',
-        image: '/images/flyers/cielo/packages.jpg',
-        pdf: '/pdf/cielo/packages.pdf'
+        title: '',
+        image: '/images/flyers/cielo/cielo1.png',
       },
       {
-        title: 'Floor Plan',
-        image: '/images/flyers/cielo/floorplan.jpg',
-        pdf: '/pdf/cielo/floorplan.pdf'
+        title: '',
+        image: '/images/flyers/cielo/cielo2.png',
       },
       {
-        title: 'Bar Packages',
-        image: '/images/flyers/cielo/bar.jpg',
-        pdf: '/pdf/cielo/bar.pdf'
+        title: '',
+        image: '/images/flyers/cielo/cielo3.png',
       },
       {
-        title: 'Preferred Vendors',
-        image: '/images/flyers/cielo/vendors.jpg',
-        pdf: '/pdf/cielo/vendors.pdf'
+        title: '',
+        image: '/images/flyers/cielo/cielo4.png',
       }
     ],
-    features: ['Grand ballroom', 'Dance floor', 'Custom lighting', 'Private event service', 'Photo-ready interiors', 'Convenient parking']
+    features: ['Dance floor', 'Bar service', 'Photo-ready interiors', 'Convenient parking']
   },
   {
     slug: 'avenue',
@@ -52,7 +48,7 @@ export const venues = [
     style: 'Contemporary Event Space',
     address: '2366 N Neva Ave, Chicago, IL 60707',
 map: 'https://www.google.com/maps?q=2366+N+Neva+Ave+Chicago+IL+60707&output=embed',
-    gallery: ['/images/venues/avenue/01.png', '/images/hero/avenue-hero.png'],
+    gallery: ['/images/venues/avenue/avenue01.png', '/images/venues/avenue/avenue02.png', '/images/venues/avenue/avenue03.png'],
     flyers: [
       {
         title: '',
@@ -87,29 +83,29 @@ map: 'https://www.google.com/maps?q=2366+N+Neva+Ave+Chicago+IL+60707&output=embe
     style: 'Classic Banquet Hall',
     address: '3140 N 77th Ave, Elmwood Park, IL 60707',
 map: 'https://www.google.com/maps?q=3140+N+77th+Ave+Elmwood+Park+IL+60707&output=embed',
-    gallery: ['/images/venues/club-elmwood/01.png', '/images/hero/club-elmwood-hero.png'],
+    gallery: ['/images/venues/club-elmwood/club-elmwood01.png', '/images/venues/club-elmwood/club-elmwood02.png', '/images/venues/club-elmwood/club-elmwood03.png'],
     flyers: [
       {
-        title: 'Wedding Packages',
-        image: '/images/flyers/cielo/packages.jpg',
-        pdf: '/pdf/cielo/packages.pdf'
+        title: '',
+        image: '/images/flyers/club-elmwood/club-elmwood1.png',
       },
       {
-        title: 'Floor Plan',
-        image: '/images/flyers/cielo/floorplan.jpg',
-        pdf: '/pdf/cielo/floorplan.pdf'
+        title: '',
+        image: '/images/flyers/club-elmwood/club-elmwood2.png',
       },
       {
-        title: 'Bar Packages',
-        image: '/images/flyers/cielo/bar.jpg',
-        pdf: '/pdf/cielo/bar.pdf'
+        title: '',
+        image: '/images/flyers/club-elmwood/club-elmwood3.png',
       },
       {
-        title: 'Preferred Vendors',
-        image: '/images/flyers/cielo/vendors.jpg',
-        pdf: '/pdf/cielo/vendors.pdf'
+        title: '',
+        image: '/images/flyers/club-elmwood/club-elmwood4.png',
+      },
+      {
+        title: '',
+        image: '/images/flyers/club-elmwood/club-elmwood5.png',
       }
     ],
-    features: ['Classic ballroom', 'Full event setup', 'Dance floor', 'Private celebrations', 'Banquet service', 'Elmwood Park location']
+    features: ['Dance floor', 'Private celebrations', 'Bar service', 'Elmwood Park location']
   }
 ];
