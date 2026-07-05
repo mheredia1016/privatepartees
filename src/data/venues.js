@@ -5,6 +5,7 @@ export const venues = [
     city: 'Franklin Park',
     logo: '/images/logos/cielo.png',
     hero: '/images/hero/cielo-hero.png', 
+    video: '',
     heroSlides: [
   '/images/venues/cielo/hero03.png'
 ],
@@ -40,6 +41,7 @@ export const venues = [
     city: 'Chicago',
     logo: '/images/logos/avenue.png',
     hero: '/images/hero/avenue-hero.png',
+    video: '/videos/avenue.mp4',
     heroSlides: [
   '/images/venues/avenue/hero03.png'
 ],
@@ -75,6 +77,7 @@ map: 'https://www.google.com/maps?q=2366+N+Neva+Ave+Chicago+IL+60707&output=embe
     city: 'Elmwood Park',
     logo: '/images/logos/club-elmwood.png',
     hero: '/images/hero/club-elmwood-hero.jpeg',
+    video: '',
     heroSlides: [
   '/images/venues/club-elmwood/hero03.png'
 ],
