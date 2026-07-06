@@ -55,14 +55,19 @@ const { venue } = Astro.props;
 
     <div class="vertical-video-wrap">
       <video
-  class="venue-video"
-  src={venue.video}
-  autoplay
-  muted
-  loop
-  playsinline
-  preload="auto"
-></video>
+        class="venue-video"
+        muted
+        playsinline
+        webkit-playsinline
+        loop
+        preload="metadata"
+      >
+        <source src={venue.video} type="video/mp4" />
+      </video>
+
+      <button class="video-play-button" type="button" aria-label="Play video">
+        ▶
+      </button>
     </div>
   </section>
 )}
