@@ -99,3 +99,23 @@ document.addEventListener('keydown', (event) => {
     closeFlyerModal();
   }
 });
+
+document.querySelectorAll('.venue-video').forEach((video) => {
+  video.muted = true;
+  video.playsInline = true;
+
+  const videoObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        video.play().catch(() => {});
+      } else {
+        video.pause();
+      }
+    });
+  }, {
+    threshold: 0.15,
+    rootMargin: '150px'
+  });
+
+  videoObserver.observe(video);
+});

@@ -55,11 +55,14 @@ const { venue } = Astro.props;
 
     <div class="vertical-video-wrap">
       <video
-        src={venue.video}
-        controls
-        playsinline
-        preload="metadata"
-      ></video>
+  class="venue-video"
+  src={venue.video}
+  autoplay
+  muted
+  loop
+  playsinline
+  preload="auto"
+></video>
     </div>
   </section>
 )}
