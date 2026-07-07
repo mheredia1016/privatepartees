@@ -1024,18 +1024,3 @@ font-size:36px
   opacity: 0;
   pointer-events: none;
 }
-
-.gallery-card {
-  display: block;
-  padding: 0;
-  border: 0;
-  background: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-.gallery-card img {
-  display: block;
-  width: 100%;
-  height: auto;
-}

@@ -75,11 +75,7 @@ const { venue } = Astro.props;
   <section class="section gallery-preview">
     <div class="section-heading reveal"><span>Photos</span><h2>Explore {venue.name}</h2></div>
     <div class="masonry-grid reveal">
-      {venue.gallery.map((image) => (
-  <button class="gallery-card" type="button" data-flyer-modal={image}>
-    <img src={image} alt={`${venue.name} gallery`} loading="lazy" />
-  </button>
-))}
+      {venue.gallery.map((image) => <a href={image}><img src={image} alt={`${venue.name} gallery`} /></a>)}
     </div>
   </section>
 
