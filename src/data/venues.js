@@ -50,7 +50,7 @@ export const venues = [
     style: 'Contemporary Event Space',
     address: '2366 N Neva Ave, Chicago, IL 60707',
 map: 'https://www.google.com/maps?q=2366+N+Neva+Ave+Chicago+IL+60707&output=embed',
-    gallery: ['/images/venues/avenue/avenue01.png', '/images/venues/avenue/avenue02.png', '/images/venues/avenue/avenue03.png'],
+    gallery: ['/images/venues/avenue/avenue01.png', '/images/venues/avenue/avenue02.png', '/images/venues/avenue/avenue03.png', '/images/venues/avenue/avenue04.png', '/images/venues/avenue/avenue05.png'],
     flyers: [
       {
         title: '',
@@ -86,7 +86,7 @@ map: 'https://www.google.com/maps?q=2366+N+Neva+Ave+Chicago+IL+60707&output=embe
     style: 'Classic Banquet Hall',
     address: '3140 N 77th Ave, Elmwood Park, IL 60707',
 map: 'https://www.google.com/maps?q=3140+N+77th+Ave+Elmwood+Park+IL+60707&output=embed',
-    gallery: ['/images/venues/club-elmwood/club-elmwood01.png', '/images/venues/club-elmwood/club-elmwood02.png', '/images/venues/club-elmwood/club-elmwood03.png'],
+    gallery: ['/images/venues/club-elmwood/club-elmwood01.png', '/images/venues/club-elmwood/club-elmwood02.png', '/images/venues/club-elmwood/club-elmwood03.png', '/images/venues/club-elmwood/club-elmwood04.png', '/images/venues/club-elmwood/club-elmwood05.png', '/images/venues/club-elmwood/club-elmwood06.png'],
     flyers: [
       {
         title: '',
