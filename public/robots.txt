@@ -1,0 +1,6 @@
+# robots.txt for PrivatePartees.com
+
+User-agent: *
+Allow: /
+
+Sitemap: https://privatepartees.com/sitemap-index.xml
