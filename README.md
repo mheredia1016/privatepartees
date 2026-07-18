@@ -1,82 +1,67 @@
-# PrivatePartees Astro Site
+# Pokémon Restock Dashboard V2
 
-## Run locally
+Clean Railway build with a dependency-free `/health` route. The web server starts before Discord, email, storage, scraping, or push initialization.
+
+## Deploy
+
+Upload the **contents** of this folder to the root of your GitHub repository.
+
+Repository root:
+
+```text
+package.json
+package-lock.json
+railway.json
+src/
+public/
+```
+
+Railway volume: mount at `/data`.
+
+## Required Railway variables
+
+```text
+MICROCENTER_STORE_NAME=IL - Chicago
+CHECK_INTERVAL_SECONDS=120
+DATA_DIR=/data
+SEED_DEFAULT_WATCH=true
+DEFAULT_PRODUCT_URL=https://www.microcenter.com/product/713503/nintendo-pokemon-mega-evolution-pitch-black-elite-trainer-box
+```
+
+Do not set `PORT`; Railway provides it.
+
+## Browser push
+
+Generate keys locally:
 
 ```bash
-npm install
-npm run dev
+npx web-push generate-vapid-keys
 ```
 
-## Deploy on Netlify
+Then add:
 
-Build command:
-
-```bash
-npm run build
+```text
+VAPID_PUBLIC_KEY=
+VAPID_PRIVATE_KEY=
+VAPID_SUBJECT=mailto:you@example.com
 ```
 
-Publish directory:
+## Gmail email alerts
 
-```bash
-dist
+```text
+EMAIL_ALERTS_ENABLED=true
+EMAIL_TO=you@example.com
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=you@gmail.com
+SMTP_PASS=your-google-app-password
+EMAIL_FROM=Pokemon Restock Alerts <you@gmail.com>
 ```
 
-## Editing venues
+## Optional Discord
 
-Edit venue details in:
-
-```txt
-src/data/venues.js
-```
-
-Changing a venue there updates the homepage cards, slider, and venue page.
-
-## Replacing hero slider backgrounds
-
-Replace these files:
-
-```txt
-public/images/hero/home-hero.png
-public/images/hero/cielo-hero.png
-public/images/hero/avenue-hero.png
-public/images/hero/club-elmwood-hero.png
-```
-
-Use the same filenames to avoid editing code.
-
-## Replacing logos
-
-Replace these files:
-
-```txt
-public/images/logos/privatepartees.png
-public/images/logos/cielo.png
-public/images/logos/avenue.png
-public/images/logos/club-elmwood.png
-```
-
-Transparent PNGs work best.
-
-## Adding more slider slides
-
-Open:
-
-```txt
-src/components/HeroSlider.astro
-```
-
-Add another object inside the `slides` array, or add a new venue to `src/data/venues.js` and it will be added automatically.
-
-## Main files
-
-```txt
-src/layouts/BaseLayout.astro       Shared page layout
-src/components/Header.astro        Shared header
-src/components/Footer.astro        Shared footer
-src/components/HeroSlider.astro    Homepage slider
-src/components/VenueCards.astro    Homepage venue cards
-src/pages/index.astro              Homepage
-src/pages/venues/[slug].astro      Reusable venue page template
-src/styles/global.css              All styling
-public/js/site.js                  Slider, mobile menu, scroll animations
+```text
+DISCORD_TOKEN=
+DISCORD_CHANNEL_ID=
 ```
