@@ -137,33 +137,6 @@ import CTA from '../components/CTA.astro';
   }
 </style>
 
-<script>
-  const popup = document.getElementById('promo-popup');
-  const closeButton = popup?.querySelector('.promo-close');
-  const storageKey = 'privatepartees-promo-seen';
 
-  function closePromo() {
-    if (!popup) return;
-    popup.hidden = true;
-    sessionStorage.setItem(storageKey, '1');
-    document.removeEventListener('keydown', handleEscape);
-  }
-
-  function handleEscape(event) {
-    if (event.key === 'Escape') closePromo();
-  }
-
-  if (popup && !sessionStorage.getItem(storageKey)) {
-    popup.hidden = false;
-    closeButton?.focus();
-    document.addEventListener('keydown', handleEscape);
-
-    closeButton?.addEventListener('click', closePromo);
-
-    popup.addEventListener('click', (event) => {
-      if (event.target === popup) closePromo();
-    });
-  }
-</script>
 </BaseLayout>
 
